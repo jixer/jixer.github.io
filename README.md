@@ -1,10 +1,14 @@
-# My Blog
-I try to blog when I can.  My blog site can be found here: 
+# About Me
+I am a software developer based out of Phoenix, AZ.  I am currently a consultant for Neudesic.  My core focus are is connected systems / EAI, but I also dable when I can in the mobile and web spaces.  
 
-# My Tools
+I try to blog when I can.  My blog site can be found here: [BloggedByChris.com](http://bloggedbychris.com)
+
+You can reach me on Twitter using the handle [@myerscj](http://twitter.com/myerscj)
+
+# Jixer.GitHub.io Tools
 I will use this site as a sandbox for small proof of concepts and tools.  The following tools can be found on this site:
 
-## Site Search Tool
+### Site Search Tool
 The [Site Search Tool](apps/search) can be used to run Google searches that are confined to specific sites.  For example, you may want to search DateTime, but only across msdn.microsoft.com.  As you may already know, this can be done by including `site:msdn.microsoft.com` in your Google search.  The object of this tool is to wrap and simplify that exact feature in the Google search API.
 
 The tool also allows you to easily add and remove domains that you wish to filter on.
