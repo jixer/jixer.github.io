@@ -8,4 +8,4 @@ The tool also allows you to easily add and remove domains that you wish to filte
 
 The tool was built using AngularJS.  All of the source code can be found by navigating to the app/search section of this site's GitHub page (click the "View on GitHub" link in the top right corner).
 
-~_Disclaimer: Providers are stored in your browser's local storage.  If you clear local storage or attempt to access this page from a different browser / computer, please note that your saved providers will not be maintained._~
+**_Disclaimer: Providers are stored in your browser's local storage.  If you clear local storage or attempt to access this page from a different browser / computer, please note that your saved providers will not be maintained._**
