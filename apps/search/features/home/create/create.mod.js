@@ -1,0 +1,1 @@
+angular.module('app.features.home.create', ['ui.bootstrap', 'ngAnimate']);

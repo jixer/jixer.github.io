@@ -1,9 +1,7 @@
 angular.module('app', [
 	'templates',
 	'ui.router',
-	'app.features.home',
-	'app.features.signin',
-	'app.features.auth'
+	'app.features.home'
 ])
 
 	.config([

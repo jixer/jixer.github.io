@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>Advanced Search</title>
+	<meta name="description" content="Seach content across specific sites.  Sites are configurable.  AngularJS example"/>
+	<meta name="viewport"	content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"/>
+	<script>
+		function loadCSS(e, t, n) { "use strict"; var i = window.document.createElement("link"); var o = t || window.document.getElementsByTagName("script")[0]; i.rel = "stylesheet"; i.href = e; i.media = "only x"; o.parentNode.insertBefore(i, o); setTimeout(function () { i.media = n || "all" }) }
+		loadCSS('https://fonts.googleapis.com/css?family=Ubuntu:300,400,700');
+		loadCSS('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700');
+		loadCSS('http://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+	</script>
+
+	<!--<link href="css/normalize.css" rel="stylesheet" type='text/css'/>
+	<link href="css/grid-prefixed.css" rel="stylesheet" type='text/css'/>
+	<link href="css/animate.css" rel="stylesheet" type='text/css'/>
+	<link href="css/ionicons.css" rel="stylesheet" type='text/css'/>
+	<link href="css/highlight.css" rel="stylesheet" type='text/css'/>
+	<link href="css/base.css" rel="stylesheet" type='text/css'/>-->
+	
+	<!-- Latest compiled and minified CSS for Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">	
+</head>
+<body>
+	
+	<small style="position:fixed;bottom:0;right:0;padding:.25em;">Development</small>
+	
+	<div ui-view></div>
+	
+	
+	<!-- AngularJS -->
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-sanitize.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-touch.js"></script>
+	<!-- Firebase -->
+	<script src='//cdn.firebase.com/js/client/1.0.18/firebase.js'></script>
+	<script src="//cdn.firebase.com/libs/angularfire/0.8.0/angularfire.js"></script>
+	<script src='//cdn.firebase.com/js/simple-login/1.6.2/firebase-simple-login.js'></script>
+	<!-- Angular UI Router -->
+	<script src="//cdn.jsdelivr.net/angular.ui-router/0.2.10/angular-ui-router.js"></script>
+	<!-- Libs -->
+	<script type="text/javascript" src="lib/ui-bootstrap-tpls-1.1.0.min.js"></script>
+	<!-- App -->
+	<script src="services/services.mod.js"></script>
+	<script src="services/search.svc.js"></script>
+	<script src="features/home/home.mod.js"></script>
+	<script src="features/home/home.ctrl.js"></script>
+	<script src="features/home/create/create.mod.js"></script>
+	<script src="features/home/create/create.ctrl.js"></script>
+	<script src="templates.js"></script>
+	<script src="app.js"></script>
+	
+</body>
+</html>

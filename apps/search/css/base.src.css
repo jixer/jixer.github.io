@@ -1,0 +1,598 @@
+﻿/*
+ * General
+ */
+html {
+	overflow-x: hidden;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: 'Ubuntu', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	line-height: 1.75;
+	background-color: #f0f0f0;
+	color: #242a31;
+}
+
+p {
+	margin: 0.5em 0;
+}
+
+hr {
+	height: 0;
+	width: 70%;
+	max-width: 600px;
+	border: 0;
+	border-top: 1px solid #effcff;
+	margin: 1.5em auto;
+}
+
+textarea {
+	resize: vertical;
+}
+
+/*
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0 0 0 0;
+	font-weight: 300;
+}
+
+h1 {
+	font-size: 1.6em;
+}
+
+/*
+ * Links
+ */
+a {
+	color: #3cf;
+	outline: 0;
+	transition: color 0.3s;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: #dd3a82;
+}
+
+a.no-style {
+	color: inherit;
+	text-decoration: none;
+}
+
+/*
+ * Images
+ */
+img {
+	max-width: 100%;
+}
+
+/*
+ * Lists
+ */
+ul {
+	padding: 0 2em;
+	overflow: hidden;
+}
+
+/*
+ * Code
+ */
+code {
+	padding: 2px 3px;
+	white-space: nowrap;
+	line-height: 1.2;
+}
+
+pre {
+	max-width: 100%;
+	overflow: auto;
+}
+
+pre, code {
+	background-color: #fcfeff;
+}
+
+pre code {
+	display: block;
+	white-space: pre;
+	background-color: transparent;
+}
+
+/*
+ * Quotes
+ */
+blockquote {
+	padding: 0 0 0 15px;
+	margin: 1em 0;
+	font-style: italic;
+	border-left: 3px solid #28a9d5;
+}
+
+/*
+ * Tables
+ */
+table {
+	padding: 0;
+	min-width: 50%;
+}
+
+table tr {
+	border-top: 1px solid #b0dae9;
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+table tr:nth-child(2n) {
+	background-color: #f8f8f8;
+}
+
+table tr th {
+	font-weight: bold;
+	border: 1px solid #b0dae9;
+	text-align: left;
+	margin: 0;
+	padding: 6px 13px;
+}
+
+table tr td {
+	border: 1px solid #b0dae9;
+	text-align: left;
+	margin: 0;
+	padding: 6px 13px;
+}
+
+table tr th :first-child, table tr td :first-child {
+	margin-top: 0;
+}
+
+table tr th :last-child, table tr td :last-child {
+	margin-bottom: 0;
+}
+
+/*
+ * Buttons
+ */
+.btn {
+	position: relative;
+	display: block;
+	width: 100%;
+	min-height: 50px;
+	line-height: 50px;
+	text-align: left;
+	text-decoration: none;
+	background-color: transparent;
+	outline: 0;
+	border: none;
+	overflow: hidden;
+	text-transform: uppercase;
+}
+
+.btn-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background-color: #28a9d5;
+	transition: all 0.3s;
+	color: #fff;
+	box-sizing: border-box;
+}
+
+.btn-message {
+	top: 50px;
+}
+
+/*
+ * Button animation
+ */
+.btn.show-message .btn-content {
+	transform: translateY(-50px);
+}
+
+.btn-default {
+	color: #fff;
+	background-color: #28a9d5;
+}
+
+.btn-default:hover, .btn-default:active,
+.btn-content:hover, .btn-content:active {
+	background-color: #2abaeb;
+}
+
+.btn-bright {
+	color: #fff;
+	background-color: #3cf;
+}
+
+.btn-bright:hover, .btn-bright:active {
+	background-color: #5bddff;
+}
+
+.btn-danger {
+	color: #fff;
+	background-color: #d63d51;
+}
+
+.btn-danger:hover, .btn-danger:active {
+	background-color: #ea3e52;
+}
+
+.btn-positive {
+	color: #fff;
+	background-color: #3ea757;
+}
+
+.btn-positive:hover, .btn-positive:active {
+	background-color: #3ebb6b;
+}
+
+.btn-text-default {
+	color: #28a9d5;
+}
+
+.btn-text-default:hover, .btn-text-default:active {
+	color: #2abaeb;
+}
+
+.btn-text-bright {
+	color: #3cf;
+}
+
+.btn-text-bright:hover, .btn-text-bright:active {
+	color: #5bddff;
+}
+
+.btn-text-danger {
+	color: #d63d51;
+}
+
+.btn-text-danger:hover, .btn-text-danger:active {
+	color: #ea3e52;
+}
+
+.btn-text-positive {
+	color: #3ea757;
+}
+
+.btn-text-positive:hover, .btn-text-positive:active {
+	color: #3ebb6b;
+}
+
+.btn:disabled {
+	cursor: default;
+}
+
+/*
+ * Loading
+ */
+.loading-indicator {
+	position: absolute;
+	width: 50px;
+	top: 25%;
+	left: 50%;
+	padding: 30px;
+	margin-left: -55px;
+	z-index: 100;
+	background: rgba(40, 169, 213, 0.75);
+	color: #fff;
+	border-radius: 20em;
+}
+
+.loading-indicator .icon {
+	font-size: 3em;
+}
+
+/*
+ * Alert Messages
+ */
+.alert-msg-container {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	color: #fff;
+	z-index: 100;
+}
+
+.alert-msg {
+	position: relative;
+	width: 80%;
+	max-width: 320px;
+	top: 40%;
+	margin: -85px auto;
+	box-sizing: border-box;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.alert-msg .icon {
+	font-size: 1.5em;
+}
+
+.alert-msg .btn {
+	margin: 5px 0;
+}
+
+.alert-msg-info {
+	background-color: #28a9d5;
+}
+
+.alert-msg-error {
+	background-color: #d63d51;
+}
+
+.alert-msg-success {
+	background-color: #3ea757;
+}
+
+.alert-msg-warning {
+	background-color: #eb8f04;
+}
+
+/*
+ * Forms
+ */
+.form {
+	position: relative;
+	width: 100%;
+	margin-top: 10%;
+}
+
+label {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.checkbox {
+	position: relative;
+	width: 26px;
+	height: 26px;
+	line-height: 20px;
+	text-align: center;
+	border: 0;
+	background-color: #fafafa;
+	outline: none;
+	cursor: pointer;
+	vertical-align: top;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+.checkbox:before {
+	content: "\f122";
+	font-family: "Ionicons";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 3px 0;
+	cursor: pointer;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.checkbox:checked:before {
+	opacity: 1;
+}
+
+select {
+	padding: 0 15px;
+	height: 50px;
+}
+
+.form-input {
+	width: 100%;
+	margin: 5px 0;
+	background-color: #fafafa;
+	outline: none;
+	border: 1px solid transparent;
+	border-left-width: 5px;
+	box-sizing: border-box;
+	border-radius: 0;
+	appearance: none;
+	-webkit-appearance: none;
+	transition: border-color 0.3s, background-color 0.3s;
+}
+
+.submitted .form-input.ng-invalid {
+	border-color: #d63d51;
+}
+
+.form-input:focus {
+	background-color: #fff;
+}
+
+/*
+ * Lists
+ */
+.item {
+	position: relative;
+	background-color: #e8e9ea;
+	margin-top: 15px;
+	border-left: 3px solid transparent;
+	transition: border-color 0.3s, background-color 0.3s;
+}
+
+a:hover .item,
+a:active .item {
+	background-color: #f8f9fa;
+	border-left-color: #3cf;
+}
+
+.item .title {
+	font-size: 1.4em;
+	font-weight: 400;
+}
+
+.item .open.icon {
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	margin-top: -14px;
+}
+
+.item small {
+	font-weight: 400;
+}
+
+/*
+ * Icons
+ */
+.icon-placeholder {
+	font-family: Ionicons;
+}
+
+.icon-padding:before {
+	padding: 15px;
+}
+
+.icon-padding-top:before {
+	padding-top: 15px;
+}
+
+.icon-padding-right:before {
+	padding-right: 15px;
+}
+
+.icon-padding-bottom:before {
+	padding-bottom: 15px;
+}
+
+.icon-padding-left:before {
+	padding-left: 15px;
+}
+
+/*
+ * Utility
+ */
+.padding {
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+.padding-top {
+	padding-top: 15px;
+	box-sizing: border-box;
+}
+
+.padding-right {
+	padding-right: 15px;
+	box-sizing: border-box;
+}
+
+.padding-bottom {
+	padding-bottom: 15px;
+	box-sizing: border-box;
+}
+
+.padding-left {
+	padding-left: 15px;
+	box-sizing: border-box;
+}
+
+.muted {
+	color: #a3a3a3;
+}
+
+.centered {
+	text-align: center;
+}
+
+.success {
+	color: #3ea757;
+}
+
+.error {
+	color: #d63d51;
+}
+
+.no-text-wrap {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	padding-right: 15px;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.rounded {
+	border-radius: 6px;
+}
+
+.invisible {
+	opacity: 0;
+}
+
+/*
+ * Animation settings
+ */
+.fadeIn {
+	animation-duration: 0.3s;
+}
+
+/*
+ * Menu
+ */
+.page, .menu {
+	box-sizing: border-box;
+	transition: transform 0.3s;
+}
+
+.menu {
+	position: fixed;
+	top: 0;
+	left: -320px;
+	width: 300px;
+	min-height: 100%;
+	background-color: #242a31;
+	color: #eaf3ff;
+	overflow-x: hidden;
+	overflow-y: auto;
+	z-index: 2;
+}
+
+.menu-btn {
+	font-size: 1.5em;
+}
+
+.menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+.menu ul li {
+	cursor: pointer;
+	border-left: 3px solid transparent;
+	box-sizing: border-box;
+	transition: background-color 0.3s, border-color 0.3s;
+}
+
+.menu ul li:hover,
+.menu ul li:active,
+.menu ul li.active {
+	border-left-color: #3cf;
+	background-color: #000;
+}
+
+.menu.menu-open {
+	transform: translate3d(320px, 0, 0);
+}
+
+@media (min-width: 48em) {
+}

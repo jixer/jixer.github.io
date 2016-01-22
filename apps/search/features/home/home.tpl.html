@@ -1,0 +1,31 @@
+<main role="main">
+	<div class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Search Providers</a>
+			</div>
+			<div class="navbar-collapse">
+				<div class="nav navbar-form navbar-right">
+					<button class="btn btn-primary" ng-click="create()">Add New Provider</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div ng-repeat="provider in providers" class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title pull-left">{{provider.title}}</h3>
+				<a href="#" class="pull-right glyphicon glyphicon-remove" style="color: #000;" ng-click="remove(provider._id)"></a>
+				<div class="clearfix"></div>
+			</div>
+			<div class="panel-body">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Search for..." ng-model="provider.search" />
+					<span class="input-group-btn">
+				        <button class="btn btn-default" ng-click="search(provider)">Search</button>
+				      </span>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
