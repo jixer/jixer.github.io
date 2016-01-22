@@ -1,7 +1,7 @@
-### My Blog
+# My Blog
 I try to blog when I can.  My blog site can be found here: 
 
-### My Tools
+# My Tools
 I will use this site as a sandbox for small proof of concepts and tools.  The following tools can be found on this site:
 
 ## Site Search Tool
