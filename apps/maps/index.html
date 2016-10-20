@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>Maps</title>
+	<meta name="description" content="Seach content across specific sites.  Sites are configurable.  AngularJS example"/>
+	<meta name="viewport"	content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"/>
+	<script>
+		function loadCSS(e, t, n) { "use strict"; var i = window.document.createElement("link"); var o = t || window.document.getElementsByTagName("script")[0]; i.rel = "stylesheet"; i.href = e; i.media = "only x"; o.parentNode.insertBefore(i, o); setTimeout(function () { i.media = n || "all" }) }
+		loadCSS('https://fonts.googleapis.com/css?family=Ubuntu:300,400,700');
+		loadCSS('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700');
+		loadCSS('http://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+	</script>
+
+	<!--<link href="css/normalize.css" rel="stylesheet" type='text/css'/>
+	<link href="css/grid-prefixed.css" rel="stylesheet" type='text/css'/>
+	<link href="css/animate.css" rel="stylesheet" type='text/css'/>
+	<link href="css/ionicons.css" rel="stylesheet" type='text/css'/>
+	<link href="css/highlight.css" rel="stylesheet" type='text/css'/>
+	<link href="css/base.css" rel="stylesheet" type='text/css'/>-->
+	
+	<!-- Latest compiled and minified CSS for Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">	
+</head>
+<body>
+	
+	<small style="position:fixed;bottom:0;right:0;padding:.25em;">Development</small>
+	<div class="navbar navbar-inverse">
+	<div class="container">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="/">Jixer.GitHub.io</a>
+		</div>
+		<div class="navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="/apps/search">Advanced Search Tool</a></li>
+			</ul>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">My Maps</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="container">		
+	<h2>My Locations</h2>
+	List of uncharted locations and maps for help finding places.
+	<h3>Hunting & Camping Locations</h3>
+	<ul>
+		<li><a href="hunting/19a">Yarnell / Prescott (Hunting area 19A)</a></li>
+	</ul>
+</div>
+</body>
+</html>
